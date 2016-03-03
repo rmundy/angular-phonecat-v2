@@ -1,0 +1,25 @@
+{
+  "name": "angular-phonecat-v2",
+  "description": "Angular Tutorial from scratch",
+  "main": "",
+  "authors": [
+    "Robert Mundy"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rmundy/angular-phonecat-v2",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.x",
+    "angular-mocks": "^1.5.0",
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6"
+  }
+}
