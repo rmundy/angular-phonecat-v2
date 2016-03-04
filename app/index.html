@@ -17,18 +17,25 @@
     <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
   </head>
   <body ng-controller="PhoneListCtrl">
-    <div class="container">
-      <ul>
-        <li ng-repeat="phone in phones">
-          <span>{{phone.name}}</span>
-          <p>
-            {{phone.snippet}}
-          </p>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <!--Sidebar content-->
 
-      <p>Total number of phones: {{phones.length}}</p>
-      <p>Hello, {{name}}!</p>
+          Search: <input ng-model="query" />
+
+        </div>
+        <div class="col-md-10">
+          <ul>
+            <li ng-repeat="phone in phones | filter:query">
+              <span>{{phone.name}}</span>
+              <p>
+                {{phone.snippet}}
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->

@@ -13,6 +13,4 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
       'name': 'MOTOROLA XOOM™',
       'snippet': 'The Next, Next Generation tablet.'
     }];
-
-    $scope.name = "World";
 });
